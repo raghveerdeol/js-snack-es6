@@ -53,18 +53,25 @@ const nomiStudenti = studenti.map((element) => {
 });
 console.log(nomiStudenti);
 
-const studenti70 = []; 
-studenti.forEach((element) => {
-    if (element.grades >= 70) {
-        studenti70.push(element.name);
-    }
+// const studenti70 = []; 
+// studenti.forEach((element) => {
+//     if (element.grades >= 70) {
+//         studenti70.push(element.name);
+//     }
+// });
+const studenti70 = studenti.filter((element) => {
+    return element.grades >= 70;
 });
 console.log(studenti70);
 
-const studenti120 = [];
-studenti.forEach((element) => {
-    if (element.grades >= 70 && element.id >= 120) {
-        studenti120.push(element.name);
-    }
+// const studenti120 = [];
+// studenti.forEach((element) => {
+//     if (element.grades >= 70 && element.id >= 120) {
+//         studenti120.push(element.name);
+//     }
+// });
+
+const studenti120 = studenti.filter((element) => {
+    return element.grades >= 70 && element.id >= 120;
 });
 console.log(studenti120);
