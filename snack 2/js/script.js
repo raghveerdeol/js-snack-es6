@@ -46,9 +46,17 @@ let studenti = [
         grades:  84,  
     },
 ];
-console.log(studenti)
+console.log(studenti);
 
 const nomiStudenti = studenti.map((element) => {
-        return (element.name).toUpperCase()
+        return (element.name).toUpperCase();
 });
-console.log(nomiStudenti)
+console.log(nomiStudenti);
+
+const studenti70 = []; 
+studenti.forEach((element) => {
+    if (element.grades >= 70) {
+        studenti70.push(element.name);
+    }
+})
+console.log(studenti70);
