@@ -47,3 +47,8 @@ let studenti = [
     },
 ];
 console.log(studenti)
+
+const nomiStudenti = studenti.map((element) => {
+        return (element.name).toUpperCase()
+});
+console.log(nomiStudenti)
