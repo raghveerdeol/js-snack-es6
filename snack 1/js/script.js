@@ -13,11 +13,30 @@ const tavoloVip = [ 'Brad Pitt', 'Johnny Depp', 'Lady Gaga', 'Cristiano Ronaldo'
 // -usiamo il ciclo for each sul array Tavolo vip per assegnare a ogni ospite: -nome tavolo - nome ospite e posto occupato;
 // - per il posto usiamo l'indice del array Tavolo Vip 
 
-for (let index = 0; index < tavoloVip.length; index++) {
+/* for (let index = 0; index < tavoloVip.length; index++) {
     tavoloVip[index] = {
         tableName: "Tavolo vip",
         guestName: tavoloVip[index],
         place: index
     }
-}
-console.log(tavoloVip)
+} */
+
+// let lista =  [];
+
+// tavoloVip.forEach((element, index) => {
+//     element = {
+//         tableName: "Tavolo vip",
+//         guestName: element,
+//         place: index
+//     }
+//     lista.push(element)
+// });
+
+let lista = tavoloVip.map((element, index) => {
+    return element = {
+        tableName: "Tavolo vip",
+        guestName: element,
+        place: index
+    }
+} )
+console.log(lista)
