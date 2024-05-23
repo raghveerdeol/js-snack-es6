@@ -58,5 +58,13 @@ studenti.forEach((element) => {
     if (element.grades >= 70) {
         studenti70.push(element.name);
     }
-})
+});
 console.log(studenti70);
+
+const studenti120 = [];
+studenti.forEach((element) => {
+    if (element.grades >= 70 && element.id >= 120) {
+        studenti120.push(element.name);
+    }
+});
+console.log(studenti120);
