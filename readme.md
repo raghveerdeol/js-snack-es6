@@ -57,6 +57,9 @@ Nome sarà l’unica proprietà da compilare, le altre saranno tutte settate a 0
     }
 ]
 Generare numeri random al posto degli 0 nelle proprietà: punti fatti e falli subiti.
+- creo una funzione che genera numeri casuali;
+- uso destructuring al interno di un ciclo map per destrutturare punti falli e falli subiti;
+- sempre al interno del ciclo foreach uso punti falli e falli subiti = getRandomNumber; 
 Infine usando la destrutturazione creiamo un nuovo array i cui elementi contengono solo nomi e falli subiti e stampiamo tutto in console.
 
 
@@ -70,6 +73,7 @@ Jumping     occhiali  blue
 CrissCross  scarpe    black
 Jenny       borsa     pink
 Questi articoli sono inseriti in un array di oggetti.
+-creiamo array di oggetti articoliModa con proprierà name, type e color;
 Dobbiamo attaccare a ognuno un cartellino position con una lettera dell'alfabeto generata casualmente e inserire gli oggetti così modificati in un nuovo array di oggetti.
 BONUS 2
 Stampare in pagina oltre che in console!
