@@ -18,9 +18,25 @@ let articoliModa = [
     },
 ];
 
+let sectionEl = document.querySelector("section");
 
 const articoliPosition = articoliModa.map((articolo) => {
-    articolo.position = getRandomCharacters();
+    let articleEl = document.createElement("article");
+    let nameEl = document.createElement("div");
+    let typeEl = document.createElement("div");
+    let colorEl = document.createElement("div");
+    let positionEl = document.createElement("div");
+    sectionEl.appendChild(articleEl);
+    articolo.position = getRandomCharacters(); 
+    let {name, type, color, position} = articolo;
+    articleEl.appendChild(nameEl);
+    articleEl.appendChild(typeEl);
+    articleEl.appendChild(colorEl);
+    articleEl.appendChild(positionEl);
+    nameEl.append(name);
+    typeEl.append(type);
+    colorEl.append(color);
+    positionEl.append(position);
     return articolo;
 });
 console.log(articoliPosition);
